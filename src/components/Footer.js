@@ -10,9 +10,9 @@ function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary">
       {"Copyright © "}
-      <Link color="inherit" href="https://material-ui.com/">
+      {/* <Link color="inherit" href="https://material-ui.com/">
         twelvve.com
-      </Link>{" "}
+      </Link>{" "} */}
       {new Date().getFullYear()}
       {"."}
     </Typography>
@@ -40,7 +40,7 @@ export default function Footer() {
       >
         <Container maxWidth="sm">
           <Typography variant="body1">
-            This site belongs to godmode-clan
+            This site belongs to kaam_cha
           </Typography>
           <Copyright />
         </Container>

@@ -7,7 +7,7 @@ import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 
-// import { About } from "./About";
+import { About } from "./About";
 import { Register } from "./Register";
 import Search from "./Search";
 
@@ -29,15 +29,11 @@ export const Home = () => {
       <Router>
             <div className="homepage">
         <Routes>
-          {/* <Route exact path="/about" component={About} /> */}
-          <Route exact path="/register" component={Register} />
-          {/* <Route exact path="/search" component={Search} /> */}
-          <Route exact path="/">
-            {/* home page */}
-          </Route>
+          <Route path="/about" element={<About/>} />
+          <Route path="/" element={<Search/>} />
+          <Route path="/register" element={<Register/>} />
         </Routes>
-              <Search />
-            </div>
+      </div>
       </Router>
       {/* footer */}
       <div style={{ position: "relative" }}>
